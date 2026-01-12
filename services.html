@@ -23,6 +23,7 @@
 </head>
 <body class="dark-mode">
     
+    <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="navbar-container">
             <a href="index.html" class="logo">AI TOOL</a>
@@ -34,9 +35,15 @@
             </button>
             
             <ul class="nav-menu" id="navMenu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="home-2.html" class="nav-link">Home 2</a></li>
-                <li class="nav-item"><a href="ai-tools.html" class="nav-link">AI Tools</a></li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="home-2.html" class="nav-link">Home 2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ai-tools.html" class="nav-link">AI Tools</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a href="services.html" class="nav-link">Services</a>
                     <ul class="dropdown-menu">
@@ -47,9 +54,15 @@
                         <li><a href="services.html#cloud-ai" class="dropdown-item">Cloud AI</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
                 <li class="nav-item mobile-menu-item">
                     <button class="dark-mode-toggle" id="darkModeToggleMobile" aria-label="Toggle dark mode" style="width: 100%; border-radius: var(--radius-md);">
                         <span>🌙</span>
@@ -80,99 +93,95 @@
         </div>
     </section>
 
+    <!-- Services Section -->
     <section class="section">
         <div class="container">
             <h2>AI Services</h2>
-            <p class="text-center" style="max-width: 800px; margin: 0 auto var(--spacing-lg); color: var(--text-secondary);">Explore our range of professional AI services</p>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto var(--spacing-lg); color: var(--text-secondary);">Explore our range of professional AI services designed to transform your business</p>
             
             <div class="features-grid" style="margin-top: var(--spacing-lg);">
                 <div class="feature-card glass-card" id="ai-chatbot" style="display: flex; flex-direction: column;">
-                    <img src="https://images.unsplash.com/photo-1676299081847-824916de030a" alt="AI Chatbot" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-sm);">
-                    <div class="feature-icon">💬</div>
+                    <div class="feature-icon" style="margin-bottom: var(--spacing-sm);">💬</div>
                     <h3>AI Chatbot Services</h3>
-                    <p>Custom conversational AI solutions that understand context, learn from interactions, and provide intelligent customer support 24/7.</p>
-                    <ul style="text-align: center; margin-top: var(--spacing-sm); color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1;">
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Natural language processing</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Multi-channel integration</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Custom training</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Analytics & insights</li>
+                    <p style="margin-bottom: var(--spacing-sm);">Custom conversational AI solutions that understand context, learn from interactions, and provide intelligent customer support 24/7.</p>
+                    <ul style="text-align: left; margin: var(--spacing-sm) 0; color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1; display: flex; flex-direction: column; align-items: flex-start;">
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Natural language processing</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Multi-channel integration</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Custom training</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Analytics & insights</li>
                     </ul>
-                    <button class="btn btn-primary" style="width: 100%; margin-top: auto; align-self: center;" onclick="window.location.href='contact.html'">Get Started</button>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: auto;" onclick="window.location.href='contact.html'">Get Started</button>
                 </div>
                 
                 <div class="feature-card glass-card" id="ai-analytics" style="display: flex; flex-direction: column;">
-                    <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="AI Analytics" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-sm);">
-                    <div class="feature-icon">📊</div>
+                    <div class="feature-icon" style="margin-bottom: var(--spacing-sm);">📊</div>
                     <h3>AI Analytics Services</h3>
-                    <p>Transform your data into actionable insights with predictive analytics, real-time dashboards, and intelligent reporting.</p>
-                    <ul style="text-align: center; margin-top: var(--spacing-sm); color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1;">
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Predictive modeling</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Real-time dashboards</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Custom reports</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Data visualization</li>
+                    <p style="margin-bottom: var(--spacing-sm);">Transform your data into actionable insights with predictive analytics, real-time dashboards, and intelligent reporting.</p>
+                    <ul style="text-align: left; margin: var(--spacing-sm) 0; color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1; display: flex; flex-direction: column; align-items: flex-start;">
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Predictive modeling</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Real-time dashboards</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Custom reports</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Data visualization</li>
                     </ul>
-                    <button class="btn btn-primary" style="width: 100%; margin-top: auto; align-self: center;" onclick="window.location.href='contact.html'">Get Started</button>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: auto;" onclick="window.location.href='contact.html'">Get Started</button>
                 </div>
                 
                 <div class="feature-card glass-card" id="ai-security" style="display: flex; flex-direction: column;">
-                    <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7" alt="AI Security" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-sm);">
-                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-icon" style="margin-bottom: var(--spacing-sm);">🛡️</div>
                     <h3>AI Security Services</h3>
-                    <p>Protect your business with AI-powered threat detection, anomaly monitoring, and automated security response systems.</p>
-                    <ul style="text-align: center; margin-top: var(--spacing-sm); color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1;">
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Threat detection</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Anomaly monitoring</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Automated responses</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Compliance support</li>
+                    <p style="margin-bottom: var(--spacing-sm);">Protect your business with AI-powered threat detection, anomaly monitoring, and automated security response systems.</p>
+                    <ul style="text-align: left; margin: var(--spacing-sm) 0; color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1; display: flex; flex-direction: column; align-items: flex-start;">
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Threat detection</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Anomaly monitoring</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Automated responses</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Compliance support</li>
                     </ul>
-                    <button class="btn btn-primary" style="width: 100%; margin-top: auto; align-self: center;" onclick="window.location.href='contact.html'">Get Started</button>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: auto;" onclick="window.location.href='contact.html'">Get Started</button>
                 </div>
                 
                 <div class="feature-card glass-card" id="cloud-ai" style="display: flex; flex-direction: column;">
-                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8" alt="Cloud AI" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-sm);">
-                    <div class="feature-icon">☁️</div>
+                    <div class="feature-icon" style="margin-bottom: var(--spacing-sm);">☁️</div>
                     <h3>Cloud AI Services</h3>
-                    <p>Scalable cloud-based AI infrastructure with managed services, auto-scaling, and enterprise-grade reliability.</p>
-                    <ul style="text-align: center; margin-top: var(--spacing-sm); color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1;">
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Scalable infrastructure</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Managed services</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Auto-scaling</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ 99.9% uptime SLA</li>
+                    <p style="margin-bottom: var(--spacing-sm);">Scalable cloud-based AI infrastructure with managed services, auto-scaling, and enterprise-grade reliability.</p>
+                    <ul style="text-align: left; margin: var(--spacing-sm) 0; color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1; display: flex; flex-direction: column; align-items: flex-start;">
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Scalable infrastructure</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Managed services</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Auto-scaling</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> 99.9% uptime SLA</li>
                     </ul>
-                    <button class="btn btn-primary" style="width: 100%; margin-top: auto; align-self: center;" onclick="window.location.href='contact.html'">Get Started</button>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: auto;" onclick="window.location.href='contact.html'">Get Started</button>
                 </div>
                 
                 <div class="feature-card glass-card" id="ai-content" style="display: flex; flex-direction: column;">
-                    <img src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4" alt="AI Content Generation" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-sm);">
-                    <div class="feature-icon">✍️</div>
+                    <div class="feature-icon" style="margin-bottom: var(--spacing-sm);">✍️</div>
                     <h3>AI Content Generation</h3>
-                    <p>Create high-quality, engaging content at scale with AI-powered writing, image generation, and multimedia creation tools.</p>
-                    <ul style="text-align: center; margin-top: var(--spacing-sm); color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1;">
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Text & article generation</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Image & video creation</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Brand voice customization</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Multi-language support</li>
+                    <p style="margin-bottom: var(--spacing-sm);">Create high-quality, engaging content at scale with AI-powered writing, image generation, and multimedia creation tools.</p>
+                    <ul style="text-align: left; margin: var(--spacing-sm) 0; color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1; display: flex; flex-direction: column; align-items: flex-start;">
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Text & article generation</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Image & video creation</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Brand voice customization</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Multi-language support</li>
                     </ul>
-                    <button class="btn btn-primary" style="width: 100%; margin-top: auto; align-self: center;" onclick="window.location.href='contact.html'">Get Started</button>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: auto;" onclick="window.location.href='contact.html'">Get Started</button>
                 </div>
                 
                 <div class="feature-card glass-card" id="ai-automation" style="display: flex; flex-direction: column;">
-                    <img src="https://images.unsplash.com/photo-1556155092-8707de31f9c4" alt="AI Automation" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: var(--spacing-sm);">
-                    <div class="feature-icon">⚙️</div>
+                    <div class="feature-icon" style="margin-bottom: var(--spacing-sm);">⚙️</div>
                     <h3>AI Automation Services</h3>
-                    <p>Streamline workflows and automate repetitive tasks with intelligent process automation and robotic process automation (RPA).</p>
-                    <ul style="text-align: center; margin-top: var(--spacing-sm); color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1;">
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Workflow automation</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Process optimization</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Task scheduling</li>
-                        <li style="text-align: center; padding: var(--spacing-xs) 0;">✓ Integration management</li>
+                    <p style="margin-bottom: var(--spacing-sm);">Streamline workflows and automate repetitive tasks with intelligent process automation and robotic process automation (RPA).</p>
+                    <ul style="text-align: left; margin: var(--spacing-sm) 0; color: var(--text-secondary); list-style: none; padding: 0; flex-grow: 1; display: flex; flex-direction: column; align-items: flex-start;">
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Workflow automation</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Process optimization</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Task scheduling</li>
+                        <li style="display: flex; align-items: center; padding: var(--spacing-xs) 0; width: 100%;"><span style="display: inline-block; width: 20px; text-align: center; margin-right: var(--spacing-xs);">✓</span> Integration management</li>
                     </ul>
-                    <button class="btn btn-primary" style="width: 100%; margin-top: auto; align-self: center;" onclick="window.location.href='contact.html'">Get Started</button>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: auto;" onclick="window.location.href='contact.html'">Get Started</button>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">

@@ -35,50 +35,46 @@
     
     <!-- Register Page (No Header/Footer) -->
     <div class="auth-container">
-        <div class="auth-card">
-            <a href="index.html" class="logo" style="text-align: center; display: block; margin-bottom: var(--spacing-lg); font-size: 2rem;">AI TOOL</a>
+        <div class="auth-card" style="position: relative; display: flex; flex-direction: column;">
+            <a href="index.html" class="logo" style="text-align: center; display: block; margin-bottom: var(--spacing-md); font-size: 1.75rem;">AI TOOL</a>
             
-            <h2>Create Account</h2>
-            <p style="text-align: center; color: var(--text-secondary); margin-bottom: var(--spacing-lg);">Start your free 14-day trial. No credit card required.</p>
+            <h2 style="margin-bottom: var(--spacing-xs);">Create Account</h2>
+            <p style="text-align: left; color: var(--text-secondary); margin-bottom: var(--spacing-md);">Start your free 14-day trial. No credit card required.</p>
             
-            <form class="auth-form" id="registerForm">
-                <div class="form-group">
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required>
+            <form class="auth-form" id="registerForm" style="flex-grow: 1;">
+                <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                    <label for="fullName" style="text-align: left; display: block; margin-bottom: var(--spacing-xs);">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="John Doe" required style="text-align: left;">
                 </div>
                 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                    <label for="email" style="text-align: left; display: block; margin-bottom: var(--spacing-xs);">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required style="text-align: left;">
                 </div>
                 
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Create a strong password" required minlength="8">
-                    <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: var(--spacing-xs);">Must be at least 8 characters</p>
+                <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                    <label for="password" style="text-align: left; display: block; margin-bottom: var(--spacing-xs);">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a strong password" required minlength="8" style="text-align: left;">
+                    <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: var(--spacing-xs); text-align: left;">Must be at least 8 characters</p>
                 </div>
                 
-                <div class="form-group">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                <div class="form-group" style="margin-bottom: var(--spacing-sm);">
+                    <label for="confirmPassword" style="text-align: left; display: block; margin-bottom: var(--spacing-xs);">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required style="text-align: left;">
                 </div>
                 
-                <div style="margin-bottom: var(--spacing-md); font-size: 0.875rem;">
-                    <label style="display: flex; align-items: start; gap: var(--spacing-xs); cursor: pointer; margin: 0;">
-                        <input type="checkbox" required style="margin-top: 2px; cursor: pointer;">
+                <div style="margin-bottom: var(--spacing-sm); font-size: 0.875rem;">
+                    <label style="display: flex; align-items: start; gap: var(--spacing-xs); cursor: pointer; margin: 0; text-align: left;">
+                        <input type="checkbox" required style="margin-top: 2px; cursor: pointer; flex-shrink: 0;">
                         <span style="color: var(--text-secondary);">I agree to the <a href="#" style="color: var(--accent-cyan);">Terms of Service</a> and <a href="#" style="color: var(--accent-cyan);">Privacy Policy</a></span>
                     </label>
                 </div>
                 
-                <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: var(--spacing-md);">Create Account</button>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: var(--spacing-sm);">Create Account</button>
             </form>
             
-            <div class="auth-link">
-                <p>Already have an account? <a href="login.html">Sign in</a></p>
-            </div>
-            
-            <div style="margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid var(--glass-border); text-align: center;">
-                <a href="index.html" style="color: var(--text-secondary); font-size: 0.875rem;">← Back to Home</a>
+            <div class="auth-link" style="text-align: left; margin-bottom: var(--spacing-sm);">
+                <p style="text-align: left;">Already have an account? <a href="login.html">Sign in</a></p>
             </div>
         </div>
     </div>
@@ -87,15 +83,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        // Password confirmation validation
+        // Register form submission with validation
         document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             const confirmPassword = document.getElementById('confirmPassword').value;
             
+            // Password confirmation validation
             if (password !== confirmPassword) {
-                e.preventDefault();
                 alert('Passwords do not match. Please try again.');
                 return false;
+            }
+            
+            // Password length validation
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters long.');
+                return false;
+            }
+            
+            // Basic validation
+            if (fullName && email && password && confirmPassword) {
+                // In a real application, you would send this to a server
+                // For now, we'll redirect to dashboard after successful registration
+                alert('Account created successfully! Redirecting to dashboard...');
+                window.location.href = 'dashboard.html';
             }
         });
     </script>
