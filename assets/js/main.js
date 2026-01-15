@@ -165,12 +165,15 @@
   const servicesLink = document.querySelector('.dropdown > .nav-link');
   const servicesMenu = document.querySelector('.dropdown-menu');
 
-  // For mobile/tablet: toggle dropdown on click
+  // For mobile/tablet: open dropdown on first tap, navigate on second
   if (servicesDropdown && servicesLink && servicesMenu) {
     servicesLink.addEventListener('click', function(e) {
       if (window.innerWidth <= 768) {
-        e.preventDefault();
-        servicesDropdown.classList.toggle('active');
+        const isActive = servicesDropdown.classList.contains('active');
+        if (!isActive) {
+          e.preventDefault();
+          servicesDropdown.classList.add('active');
+        }
       }
     });
 

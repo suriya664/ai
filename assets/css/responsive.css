@@ -63,7 +63,7 @@
 
   .nav-menu.active {
     display: flex !important;
-    max-height: 600px;
+    max-height: calc(100vh - 80px);
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -125,6 +125,14 @@
 
   .dashboard-content {
     margin-left: 200px;
+  }
+
+  /* Auth headings alignment on tablet/mobile */
+  .login-page .auth-card > h2,
+  .login-page .auth-card > p,
+  .register-page .auth-card > h2,
+  .register-page .auth-card > p {
+    text-align: center !important;
   }
 }
 
@@ -208,7 +216,7 @@
   }
 
   .nav-menu.active {
-    max-height: 600px;
+    max-height: calc(100vh - 80px);
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -374,6 +382,10 @@
     gap: var(--spacing-md);
   }
 
+  .social-links {
+    justify-content: center;
+  }
+
   /* Buttons */
   .btn {
     width: 100% !important;
@@ -437,6 +449,7 @@
     height: 100vh;
     overflow-y: auto;
     box-shadow: 2px 0 20px rgba(0, 0, 0, 0.5);
+    padding-top: calc(var(--spacing-md) + 48px);
   }
 
   .dashboard-sidebar.active {
@@ -478,6 +491,7 @@
     text-align: center !important;
     margin-top: var(--spacing-sm);
     padding-top: 0;
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
   }
 
   .dashboard-header p {
@@ -486,6 +500,10 @@
 
   .dashboard-stats {
     grid-template-columns: 1fr;
+  }
+
+  .dashboard-stat-card .stat-value {
+    text-align: center;
   }
 
   .dashboard-usage-cards {
