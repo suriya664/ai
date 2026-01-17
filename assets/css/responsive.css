@@ -128,10 +128,38 @@
   }
 
   /* Auth headings alignment on tablet/mobile */
-  .login-page .auth-card > h2,
-  .login-page .auth-card > p,
-  .register-page .auth-card > h2,
-  .register-page .auth-card > p {
+  .login-page .auth-card .auth-title,
+  .login-page .auth-card .auth-subtitle,
+  .register-page .auth-card .auth-title,
+  .register-page .auth-card .auth-subtitle {
+    text-align: center !important;
+  }
+
+  /* Center all auth content on tablet/mobile */
+  .login-page .auth-card,
+  .register-page .auth-card {
+    text-align: center;
+  }
+
+  .login-page .logo,
+  .register-page .logo {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .login-page .auth-form label,
+  .login-page .auth-form input,
+  .register-page .auth-form label,
+  .register-page .auth-form input,
+  .register-page .auth-form p {
+    text-align: center !important;
+  }
+
+  .login-page .auth-link,
+  .login-page .auth-link p,
+  .register-page .auth-link,
+  .register-page .auth-link p {
     text-align: center !important;
   }
 }

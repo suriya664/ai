@@ -137,7 +137,8 @@ ul, ol {
 }
 
 h1 {
-  font-size: clamp(3.5rem, 7vw, 5.5rem);
+  font-weight: 700;
+  font-size: clamp(4.5rem, 9vw, 7.5rem);
   background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple), var(--accent-pink));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -148,17 +149,19 @@ h1 {
 /* Hero sections - Override gradient with white text (defined in hero section below) */
 
 h2 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 600;
+  font-size: clamp(3rem, 6vw, 4.25rem);
   margin-bottom: var(--spacing-sm);
 }
 
 h3 {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 300;
+  font-size: clamp(2rem, 4.5vw, 3rem);
   margin-bottom: var(--spacing-sm);
 }
 
 h4, h5, h6 {
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 p {
@@ -459,6 +462,7 @@ section.hero h1,
 section.hero .hero-content h1 {
   margin-bottom: var(--spacing-md);
   animation: fadeInUp 0.8s ease;
+  font-weight: 800;
   color: #ffffff !important;
   background: none !important;
   background-image: none !important;
@@ -572,13 +576,13 @@ section.hero .hero-content p {
 
 /* Light mode visibility for secondary buttons */
 body.light-mode .btn-secondary {
-  background: rgba(0, 0, 0, 0.04);
-  border-color: rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  border-color: #cfd4dc;
   color: var(--text-primary);
 }
 
 body.light-mode .btn-secondary:hover {
-  background: rgba(0, 0, 0, 0.08);
+  background: #f5f7fa;
   border-color: var(--accent-cyan);
   color: var(--text-primary);
 }
